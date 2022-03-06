@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="pl">
+<html lang="pl" xmlns:>
 <head>
     <meta charset="UTF-8">
     <title>Rejestracja</title>
     <style>
-    [id=city]{ width:40%; float:left}
-    [id=voivodeship]{ width:45%; float:left}
-    [id=ZIP code]{ width:50%; float:left}
+    #city{width:30%;display: inline-block;}
+    #voivodeship{width:30%;display: inline-block;}
+    #ZIP_code{width:30%;display: inline-block;}
+
     </style>
 
     <link rel="stylesheet"
@@ -20,13 +21,13 @@
 <div>
     <label for="firstName">Imię</label>
     <p></p>
-    <input type="text" id="firstName" placeholder="Wpisz imię" size="180">
+    <input type="text" id="firstName" placeholder="Wpisz imię" size="150">
 </div>
 <p></p>
 <div>
     <label for="lastName">Nazwisko</label>
     <p></p>
-    <input type="text" id="lastName" placeholder="Wpisz nazwisko" size="180">
+    <input type="text" id="lastName" placeholder="Wpisz nazwisko" size="150">
 </div>
 <p></p>
 <div>
@@ -41,25 +42,24 @@
 <div>
     <label for="email">Adres email</label>
     <p></p>
-    <input type="email" placeholder="Wpisz adres email" id="email"size="180">
+    <input type="email" placeholder="Wpisz adres email" id="email" size="150">
 </div>
 <p></p>
 <div>
     <label for="password">Hasło</label>
     <p></p>
-    <input type="password" placeholder="Hasło" id="password"size="180">
+    <input type="password" placeholder="Hasło" id="password" size="150">
     <small><small>
     <p>Min. 8 znaków</p>
     </small></small>
 </div>
+
 <div id="city">Miasto</div>
 <div id="voivodeship">Województwo</div>
-<div id="ZIP code">Kod pocztowy</div>
+<div id="ZIP_code">Kod pocztowy</div>
 
-<form action="miasto">
+<form action="dane_adresowe">
     <input type="text" name="miasto">
-</form>
-
 <select>
     <option value="Wybierz">Wybierz...</option>
     <option value="mazowieckie">mazowieckie</option>
@@ -67,10 +67,8 @@
     <option value="świętokrzyskie">świętokrzyskie</option>
     <option value="podlaskie">podlaskie</option>
 </select>
-<form action="kod pocztowy">
     <input type="text" name="kod pocztowy">
 </form>
-
 <p></p>
 <fieldset>
     <div>
